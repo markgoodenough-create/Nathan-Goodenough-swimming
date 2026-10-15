@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Goodenough — Swimming Recruiting Profile Class of 2027</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --accent: #38bdf8;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --highlight: #22c55e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0284c7 0%, #0f172a 100%);
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .badge {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            border: 1px solid var(--accent);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem auto;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .table-toggle {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .toggle-btn {
+            background: #334155;
+            color: var(--text-muted);
+            border: none;
+            padding: 0.4rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .toggle-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        th {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        .highlight-time {
+            color: var(--highlight);
+            font-weight: 700;
+        }
+
+        .contact-list li {
+            list-style: none;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-list strong {
+            color: var(--text-muted);
+            display: block;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid #334155;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="badge">NCAA Class of 2027</span>
+        <h1>Nathan Goodenough</h1>
+        <p class="subtitle">Middle Distance Freestyle & Butterfly Specialist | Cancún, Mexico</p>
+        <div class="btn-group">
+            <a href="https://www.swimcloud.com/swimmer/3431864/" target="_blank" class="btn">Swimcloud Profile</a>
+            <a href="https://www.instagram.com/nathan._goodenough/" target="_blank" class="btn" style="background:#e1306c;">Instagram</a>
+            <a href="mailto:nathangoodenough@gmail.com" class="btn" style="background:#334155;">Contact Athlete</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Quick Info Grid -->
+        <div class="grid">
+            <div class="card">
+                <h2>🏫 Academics & School</h2>
+                <ul class="contact-list">
+                    <li><strong>High School</strong> The International American School of Cancun</li>
+                    <li><strong>Graduation Year</strong> Class of 2027</li>
+                    <li><strong>Location</strong> Cancún, Quintana Roo, Mexico</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🏊‍♂️ Athletics & Club</h2>
+                <ul class="contact-list">
+                    <li><strong>Club Team</strong> Academia de Natación Sharks CA (ANSC)</li>
+                    <li><strong>Head Coach</strong> Mariel Alarcón</li>
+                    <li><strong>Coach Email</strong> proa.mariel@gmail.com</li>
+                    <li><strong>Coach Phone</strong> +52 998 197 4828</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Swimming Times Section -->
+        <div class="card">
+            <h2>⏱️ Personal Best Times</h2>
+            <div class="table-toggle">
+                <button class="toggle-btn active" onclick="switchCourse('lcm')">Long Course Meters (LCM)</button>
+                <button class="toggle-btn" onclick="switchCourse('scm')">Short Course Meters (SCM)</button>
+            </div>
+
+            <table id="lcm-table">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Best Time</th>
+                        <th>Meet</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>50m Freestyle</td><td class="highlight-time">26.43</td><td>Nacional</td><td>July 2026</td></tr>
+                    <tr><td>100m Freestyle</td><td class="highlight-time">57.38</td><td>Estatal CL</td><td>June 2026</td></tr>
+                    <tr><td>200m Freestyle</td><td class="highlight-time">2:08.35</td><td>Camp. Regional CL</td><td>April 2026</td></tr>
+                    <tr><td>50m Butterfly</td><td class="highlight-time">28.22</td><td>6a Copa Kiin-Ha</td><td>Feb 2025</td></tr>
+                    <tr><td>100m Butterfly</td><td class="highlight-time">1:02.92</td><td>Nacional</td><td>July 2026</td></tr>
+                    <tr><td>50m Backstroke</td><td class="highlight-time">31.05</td><td>Camp. Regional CL</td><td>April 2026</td></tr>
+                    <tr><td>100m Backstroke</td><td class="highlight-time">1:09.87</td><td>Camp. Regional CL</td><td>April 2026</td></tr>
+                </tbody>
+            </table>
+
+            <table id="scm-table" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Best Time</th>
+                        <th>Meet</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>50m Freestyle</td><td class="highlight-time">25.38</td><td>Selectivo Estatal</td><td>Nov 2025</td></tr>
+                    <tr><td>100m Freestyle</td><td class="highlight-time">58.16</td><td>Copa Marlins</td><td>Sept 2026</td></tr>
+                    <tr><td>200m Freestyle</td><td class="highlight-time">2:09.30</td><td>Regional CC</td><td>Dec 2024</td></tr>
+                    <tr><td>50m Butterfly</td><td class="highlight-time">27.56</td><td>Copa Marlins</td><td>Sept 2026</td></tr>
+                    <tr><td>100m Butterfly</td><td class="highlight-time">1:01.38</td><td>Copa Marlins</td><td>Sept 2026</td></tr>
+                    <tr><td>50m Backstroke</td><td class="highlight-time">29.65</td><td>Copa Marlins</td><td>Sept 2026</td></tr>
+                    <tr><td>100m Backstroke</td><td class="highlight-time">1:05.60</td><td>Copa Swim Racers</td><td>Nov 2025</td></tr>
+                    <tr><td>200m Backstroke</td><td class="highlight-time">2:31.14</td><td>Copa Marlins</td><td>Sept 2026</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nathan Goodenough Recruiting Showcase. All times verified via official swim results.</p>
+    </footer>
+
+    <script>
+        function switchCourse(course) {
+            const lcmTable = document.getElementById('lcm-table');
+            const scmTable = document.getElementById('scm-table');
+            const btns = document.querySelectorAll('.toggle-btn');
+
+            if (course === 'lcm') {
+                lcmTable.style.display = 'table';
+                scmTable.style.display = 'none';
+                btns[0].classList.add('active');
+                btns[1].classList.remove('active');
+            } else {
+                lcmTable.style.display = 'none';
+                scmTable.style.display = 'table';
+                btns[0].classList.remove('active');
+                btns[1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
