@@ -36,6 +36,17 @@
             border-bottom: 3px solid var(--accent);
         }
 
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            margin-bottom: 1rem;
+            background-color: var(--card-bg);
+        }
+
         .badge {
             background: rgba(56, 189, 248, 0.15);
             color: var(--accent);
@@ -100,6 +111,7 @@
             border-radius: 12px;
             padding: 1.5rem;
             border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 2rem;
         }
 
         .card h2 {
@@ -109,6 +121,56 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        /* Gallery Styles */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Video Section Styles */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .video-card {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 180px;
+            border-radius: 6px;
+            border: none;
+            background: #1e293b;
+        }
+
+        .video-title {
+            font-weight: 600;
+            margin-top: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.95rem;
         }
 
         .table-toggle {
@@ -178,9 +240,12 @@
 <body>
 
     <header>
+        <!-- Replace 'profile.jpg' with your photo filename -->
+        <img src="profile.jpg" alt="Nathan Goodenough" class="profile-photo" onerror="this.src='https://via.placeholder.com/150/0284c7/ffffff?text=Nathan+G.';">
+        <br>
         <span class="badge">NCAA Class of 2027</span>
         <h1>Nathan Goodenough</h1>
-        <p class="subtitle">Middle Distance Freestyle & Butterfly Specialist | Cancún, Mexico</p>
+        <p class="subtitle">Sprinter Freestyle, Butterfly and Backstroke | Cancún, Mexico</p>
         <div class="btn-group">
             <a href="https://www.swimcloud.com/swimmer/3431864/" target="_blank" class="btn">Swimcloud Profile</a>
             <a href="https://www.instagram.com/nathan._goodenough/" target="_blank" class="btn" style="background:#e1306c;">Instagram</a>
@@ -192,7 +257,7 @@
         
         <!-- Quick Info Grid -->
         <div class="grid">
-            <div class="card">
+            <div class="card" style="margin-bottom:0;">
                 <h2>🏫 Academics & School</h2>
                 <ul class="contact-list">
                     <li><strong>High School</strong> The International American School of Cancun</li>
@@ -201,7 +266,7 @@
                 </ul>
             </div>
 
-            <div class="card">
+            <div class="card" style="margin-bottom:0;">
                 <h2>🏊‍♂️ Athletics & Club</h2>
                 <ul class="contact-list">
                     <li><strong>Club Team</strong> Academia de Natación Sharks CA (ANSC)</li>
@@ -260,6 +325,54 @@
                     <tr><td>200m Backstroke</td><td class="highlight-time">2:31.14</td><td>Copa Marlins</td><td>Sept 2026</td></tr>
                 </tbody>
             </table>
+        </div>
+
+        <!-- Action Photos Section -->
+        <div class="card">
+            <h2>📸 Action Photos</h2>
+            <div class="photo-gallery">
+                <img src="photo1.jpg" class="gallery-item" alt="Nathan Action Photo 1" onerror="this.outerHTML='<div class=\'gallery-item\'>Upload photo1.jpg</div>';">
+                <img src="photo2.jpg" class="gallery-item" alt="Nathan Action Photo 2" onerror="this.outerHTML='<div class=\'gallery-item\'>Upload photo2.jpg</div>';">
+                <img src="photo3.jpg" class="gallery-item" alt="Nathan Action Photo 3" onerror="this.outerHTML='<div class=\'gallery-item\'>Upload photo3.jpg</div>';">
+                <img src="photo4.jpg" class="gallery-item" alt="Nathan Action Photo 4" onerror="this.outerHTML='<div class=\'gallery-item\'>Upload photo4.jpg</div>';">
+            </div>
+        </div>
+
+        <!-- Race Videos Section -->
+        <div class="card">
+            <h2>🎬 Race Footage & Videos</h2>
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+                    <div class="video-title">50m Freestyle Sprint</div>
+                </div>
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+                    <div class="video-title">100m Freestyle Race</div>
+                </div>
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+                    <div class="video-title">50m Butterfly Sprint</div>
+                </div>
+                <!-- Video 4 -->
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen></iframe>
+                    <div class="video-title">100m Butterfly Race</div>
+                </div>
+                <!-- Video 5 -->
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" allowfullscreen></iframe>
+                    <div class="video-title">50m Backstroke Sprint</div>
+                </div>
+                <!-- Video 6 -->
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_6" allowfullscreen></iframe>
+                    <div class="video-title">100m Backstroke Race</div>
+                </div>
+            </div>
         </div>
 
     </div>
